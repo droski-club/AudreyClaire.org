@@ -3,68 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Welcome to AudreyClaire.org – a magical birthday and memory experience!" />
-  <title>Audrey Claire</title>
+  <title>RSVP – Audrey Claire's 9th Birthday</title>
   <style>
     body {
-      font-family: 'Helvetica Neue', sans-serif;
-      margin: 0;
-      padding: 2rem;
-      background: #fdf6f9;
-      color: #333;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fceef4;
       text-align: center;
+      padding: 2em;
+      color: #5c246e;
     }
+
     h1 {
-      color: #b17fa8;
+      font-size: 2em;
+      margin-bottom: 0.2em;
     }
-    a.button {
+
+    .bow {
+      font-size: 1.5em;
+      color: #e38bb4;
+    }
+
+    form {
+      background-color: white;
       display: inline-block;
-      margin-top: 1.5rem;
-      padding: 1rem 2rem;
-      background: #b17fa8;
+      padding: 1.5em 2em;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 400px;
+      margin-top: 1em;
+    }
+
+    label {
+      display: block;
+      text-align: left;
+      margin: 0.8em 0 0.3em;
+      font-weight: 500;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.6em;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    button {
+      margin-top: 1.5em;
+      background-color: #c084c4;
       color: white;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
+      border: none;
+      padding: 0.8em 1.4em;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #a867a3;
+    }
+
+    .subtitle {
+      margin-bottom: 1.5em;
+      font-size: 1em;
     }
   </style>
 </head>
 <body>
-  <h1>🎀 Welcome to AudreyClaire.org 🎀</h1>
-  <p>This is your live site connected to GitHub + Netlify.</p>
-  <a href="/Files" class="button">Explore the Project</a>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
+  <div class="bow">🎀</div>
+  <h1>RSVP for Audrey Claire’s 9th Birthday</h1>
+  <p class="subtitle">We can’t wait to celebrate with you! 🎉</p>
+
   <form name="rsvp" method="POST" data-netlify="true" action="/thank-you">
-  <input type="hidden" name="form-name" value="rsvp" />
-  
-  <label>Your Name:<br>
-    <input type="text" name="name" required>
-  </label><br><br>
+    <input type="hidden" name="form-name" value="rsvp" />
+    
+    <label for="name">Your Name:</label>
+    <input type="text" name="name" id="name" required />
 
-  <label>Email:<br>
-    <input type="email" name="email" required>
-  </label><br><br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required />
 
-  <label>How many attending?<br>
-    <input type="number" name="guests" min="1" required>
-  </label><br><br>
+    <label for="attending">How many attending?</label>
+    <input type="number" name="attending" id="attending" min="1" required />
 
-  <label>Any allergies or special notes?<br>
-    <textarea name="message"></textarea>
-  </label><br><br>
+    <label for="notes">Any allergies or special notes?</label>
+    <textarea name="notes" id="notes" rows="3"></textarea>
 
-  <button type="submit">Submit RSVP</button>
-</form>
-  </body>
+    <button type="submit">Submit RSVP</button>
+  </form>
+</body>
 </html>
