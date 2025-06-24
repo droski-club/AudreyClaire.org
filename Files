@@ -1,0 +1,11 @@
+# Clone your repo
+git clone https://github.com/droski-club/AudreyClaire.org
+cd AudreyClaire.org
+
+# Add your site files
+cp -r ~/Desktop/YourWebsite/* .
+
+# Stage and commit
+git add .
+git commit -m "Initial site upload"
+git push origin main
