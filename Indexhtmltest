@@ -36,3 +36,9 @@
   <div class="ribbon">Deployed via Netlify + GitHub 🎉</div>
 </body>
 </html>
+<form name="contact" netlify>
+  <input type="text" name="name" />
+  <input type="email" name="email" />
+  <input type="phone" name="phone" />
+  <button type="submit">Send</button>
+</form>
