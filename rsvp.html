@@ -1,1 +1,24 @@
-/rsvp   /rsvp.html   200
+<form name="rsvp-form" method="POST" data-netlify="true" action="/thank-you" netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="rsvp-form" />
+  <p hidden>
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </p>
+
+  <label>Your Name:<br />
+    <input type="text" name="name" required />
+  </label><br />
+
+  <label>Email:<br />
+    <input type="email" name="email" required />
+  </label><br />
+
+  <label>How many attending?<br />
+    <input type="number" name="attending" min="1" required />
+  </label><br />
+
+  <label>Any allergies or special notes?<br />
+    <textarea name="notes"></textarea>
+  </label><br />
+
+  <button type="submit">Submit RSVP</button>
+</form>
