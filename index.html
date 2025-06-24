@@ -45,5 +45,26 @@
     });
   }
 </script>
+  <form name="rsvp" method="POST" data-netlify="true" action="/thank-you">
+  <input type="hidden" name="form-name" value="rsvp" />
+  
+  <label>Your Name:<br>
+    <input type="text" name="name" required>
+  </label><br><br>
+
+  <label>Email:<br>
+    <input type="email" name="email" required>
+  </label><br><br>
+
+  <label>How many attending?<br>
+    <input type="number" name="guests" min="1" required>
+  </label><br><br>
+
+  <label>Any allergies or special notes?<br>
+    <textarea name="message"></textarea>
+  </label><br><br>
+
+  <button type="submit">Submit RSVP</button>
+</form>
   </body>
 </html>
