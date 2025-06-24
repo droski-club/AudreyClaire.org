@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audrey Claire | Site Test</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background: #fef6f9;
+      color: #333;
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #d185aa;
+    }
+    p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+    .ribbon {
+      background: #d185aa;
+      color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      display: inline-block;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>AudreyClaire.org</h1>
+  <p>This is your live site — it's working!</p>
+  <div class="ribbon">Deployed via Netlify + GitHub 🎉</div>
+</body>
+</html>
