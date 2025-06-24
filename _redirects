@@ -1,3 +1,2 @@
-/*    /index.html   200
-http://*    https://audreyclaire.org   301!
-https://audreyclaire.org/*    https://www.audreyclaire.org/:splat  301!
+/rsvp     /rsvp.html     200
+/thank-you /thank-you.html 200
