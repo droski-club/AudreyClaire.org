@@ -74,22 +74,13 @@
   <h1>RSVP for Audrey Claire’s 9th Birthday</h1>
   <p class="subtitle">We can’t wait to celebrate with you! 🎉</p>
 
-  <form name="rsvp" method="POST" data-netlify="true" action="/thank-you">
-    <input type="hidden" name="form-name" value="rsvp" />
-    
-    <label for="name">Your Name:</label>
-    <input type="text" name="name" id="name" required />
-
-    <label for="email">Email:</label>
-    <input type="email" name="email" id="email" required />
-
-    <label for="attending">How many attending?</label>
-    <input type="number" name="attending" id="attending" min="1" required />
-
-    <label for="notes">Any allergies or special notes?</label>
-    <textarea name="notes" id="notes" rows="3"></textarea>
-
-    <button type="submit">Submit RSVP</button>
+  <form name=<form name="rsvp" method="POST" data-netlify="true" action="/thank-you">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Email" required />
+  <input type="number" name="attending" placeholder="How many attending?" required />
+  <textarea name="notes" placeholder="Any allergies or special notes?"></textarea>
+  <button type="submit">Submit RSVP</button>
+</form>
   </form>
 </body>
 </html>
